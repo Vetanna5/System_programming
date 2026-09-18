@@ -34,3 +34,4 @@ date >> 'Лабораторная работа №1/Result_3'
 cd .. 
 mkdir -p Lab_1
 mv sanbox Work Lab_1/
+chmod 700 'Vetlugina A V'
