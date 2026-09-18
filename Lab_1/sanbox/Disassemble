@@ -1,0 +1,24 @@
+Dump of assembler code for function _start:
+   0x08049032 <+0>:	mov    eax,0x4
+   0x08049037 <+5>:	mov    ebx,0x1
+   0x0804903c <+10>:	mov    ecx,0x8049000
+   0x08049041 <+15>:	mov    edx,0x32
+   0x08049046 <+20>:	int    0x80
+   0x08049048 <+22>:	mov    eax,0x1
+   0x0804904d <+27>:	mov    ebx,0x0
+   0x08049052 <+32>:	int    0x80
+End of assembler dump.
+Warning: 'set logging off', an alias for the command 'set logging enabled', is deprecated.
+Use 'set logging enabled off'.
+
+Dump of assembler code for function main:
+   0x0000000000001149 <+0>:	endbr64
+   0x000000000000114d <+4>:	push   rbp
+   0x000000000000114e <+5>:	mov    rbp,rsp
+   0x0000000000001151 <+8>:	lea    rax,[rip+0xeb0]        # 0x2008
+   0x0000000000001158 <+15>:	mov    rdi,rax
+   0x000000000000115b <+18>:	call   0x1050 <puts@plt>
+   0x0000000000001160 <+23>:	mov    eax,0x0
+   0x0000000000001165 <+28>:	pop    rbp
+   0x0000000000001166 <+29>:	ret
+End of assembler dump.

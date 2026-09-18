@@ -1,0 +1,39 @@
+mkdir -p 'Work/Лабораторная работа №1' 'Work/Vetlugina A V'
+touch Work_files
+chmod 772 'Лабораторная работа №1'
+chmod 300 'Vetlugina A V'
+touch 'Text @1' 'Text $2' 'Text #3'
+cat << 'EOF' > 'Text @1'
+> Птица говорун отличается умом и сообразительностью!
+> Отличается умом, отличается сообразительностью...
+> EOF
+cat 'Text @1' > 'Text $2'
+mv 'Text $2' 'Лабораторная работа №1'
+cp 'Text @1' 'Vetlugina A V'
+
+(cat 'Vetlugina A V/Text @1'
+Птица говорун отличается умом и сообразительностью!
+Отличается умом, отличается сообразительностью...)
+
+gzip -c 'Text @1' > 'Text @1.gz'
+gzip -c 'Text #3' > 'Text #3.gz'
+tar -cvf 'MyAchiv.tar' 'Text @1.gz' 'Text #3.gz'
+Text @1.gz
+Text #3.gz
+rm -f 'Text @1.gz' 'Text #3.gz'
+head -n 1 'Text @1' >> 'Text #3'
+echo 'Будь осторожен! Преступник вооружен!' >> 'Text #3'
+touch 'Vetlugina A V/Result_one'
+tac 'Text @1' > 'Vetlugina A V/Result_one'
+mv 'Vetlugina A V/Result_one' 'Vetlugina A V/Result_two'
+touch 'Vetlugina A V/Result_3'
+cat 'Vetlugina A V'/T* > 'Лабораторная работа №1/Result_3'
+chmod 700 'Vetlugina A V'
+cat 'Vetlugina A V'/T* > 'Лабораторная работа №1/Result_3'
+chmod 300 'Vetlugina A V'
+uname -a >> 'Лабораторная работа №1/Result_3'
+date >> 'Лабораторная работа №1/Result_3'
+cd .. 
+mkdir -p Lab_1
+mv sanbox Work Lab_1/
+chmod 700 'Lab_1/Work/Vetlugina A V'
