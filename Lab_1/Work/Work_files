@@ -28,12 +28,9 @@ tac 'Text @1' > 'Vetlugina A V/Result_one'
 mv 'Vetlugina A V/Result_one' 'Vetlugina A V/Result_two'
 touch 'Vetlugina A V/Result_3'
 cat 'Vetlugina A V'/T* > 'Лабораторная работа №1/Result_3'
-chmod 700 'Vetlugina A V'
-cat 'Vetlugina A V'/T* > 'Лабораторная работа №1/Result_3'
-chmod 300 'Vetlugina A V'
+sudo bash -c "cat 'Vetlugina A V'/T*" > 'Лабораторная работа №1/Result_3'
 uname -a >> 'Лабораторная работа №1/Result_3'
 date >> 'Лабораторная работа №1/Result_3'
 cd .. 
 mkdir -p Lab_1
 mv sanbox Work Lab_1/
-chmod 700 'Lab_1/Work/Vetlugina A V'
